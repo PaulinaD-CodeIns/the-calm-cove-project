@@ -439,9 +439,22 @@ footer #social-medias a:hover {
     }
 }
 
-/* Hide Google Map on screen widths below 1440px */
+/* Hide Google Map on screen widths below 1440px and adjust Find Us layout */
 @media (max-width: 1439px) {
     #google-map {
-        display: none;
+        display: none; /* Hide Google Map */
+    }
+
+    /* Adjust Find Us section layout */
+    .find-us-box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contact-info {
+        width: 100%; /* Make Contact Info div stretch to fit the container */
+        text-align: center; /* Center align the text */
+        margin-top: 1rem; /* Add spacing if needed */
     }
 }
