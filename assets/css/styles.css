@@ -9,18 +9,19 @@
 /* Body Styling */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #F4F1E1; 
+    background-color: #F4F1E1;
     color: #3E4E38;
+    line-height: 1.6;
 }
 
-/* Header Styles */
+/* Header Styling */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 10px 2rem;
     background-color: white;
-    position: sticky;
+    position: relative;
     top: 0;
     width: 100%;
     z-index: 100;
@@ -28,13 +29,11 @@ header {
 }
 
 header .img-box img {
-    width: 300px;
+    width: 200px;
 }
 
 nav .nav-box {
     display: flex;
-    align-items: center;
-    padding: 0.8rem 2.5rem;
 }
 
 nav #nav-menu {
@@ -43,14 +42,13 @@ nav #nav-menu {
 }
 
 nav #nav-menu li {
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 nav #nav-menu a {
     text-decoration: none;
     color: #3E4E38;
     font-weight: bold;
-    font-size: 1.2rem;
     transition: color 0.3s ease;
 }
 
@@ -58,7 +56,7 @@ nav #nav-menu a:hover {
     color: #A1C9A5;
 }
 
-/* Navbar Line */
+/* Nav Bar  Styling */
 hr#nav-bar-line {
     margin: 0;
     border: none;
@@ -66,47 +64,55 @@ hr#nav-bar-line {
     background-color: #A1C9A5;
 }
 
-/* Main Content */
+/* Main body Styling */
 main {
     padding: 2rem 3rem;
 }
 
-/* Welcome Section */
-
-#welcome-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 2rem 0;
-}
-
-#welcome-text h3 {
+/* Welcome Section Styling */
+#welcome-section h3 {
     font-size: 2.5rem;
     color: #3E4E38;
     margin-bottom: 1rem;
 }
 
-#welcome-text p {
+#welcome-section p {
     font-size: 1.1rem;
     line-height: 1.8;
-    max-width: 80vw;
-    margin: 0 auto;
-    padding: 0 1rem;
 }
 
 #welcome-img {
-    width: 80vw;
-    max-width: 90vw;
-    height: auto;
+    width: 100%;
     border-radius: 10px;
     margin-top: 2rem;
 }
 
-.welcome-image {
+/* Classes offered section Styling */
+.what-we-offer-box {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 3rem;
 }
 
+#what-we-offer-text {
+    width: 50%;
+}
+
+.what-we-offer-box ul {
+    list-style-type: none;
+    padding-left: 1rem;
+}
+
+.what-we-offer-box li {
+    margin-bottom: 1rem;
+}
+
+.meditation-img-box {
+    width: 40%;
+}
+
+#meditation-img {
+    width: 100%;
+    border-radius: 10px;
+}
