@@ -1,63 +1,67 @@
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body Styling */
 body {
-    background-color: white;
-    font-family: Arial, sans-serif;
-    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #F4F1E1; 
+    color: #3E4E38;
 }
 
+/* Header Styles */
 header {
-    text-align: center;
     display: flex;
-    justify-content: center;
-    align-items: center; 
-    padding: 10px 0;
-}
-
-#logo {
-    max-width: 100%;
-    height: auto;
-}
-
-nav {
-    padding: 0;
-    text-align: center;
-}
-
-#nav-menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-#nav-menu li {
-    margin: 10px 15px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
     background-color: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-#nav-menu a {
-    color: black;
+header .img-box img {
+    width: 300px;
+}
+
+nav .nav-box {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 2.5rem;
+}
+
+nav #nav-menu {
+    display: flex;
+    list-style-type: none;
+}
+
+nav #nav-menu li {
+    margin: 0 20px;
+}
+
+nav #nav-menu a {
     text-decoration: none;
+    color: #3E4E38;
     font-weight: bold;
-    font-size: 1.1em;
-    display: block;
-    padding: 10px 15px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
 }
 
-#nav-menu a:hover {
-    text-decoration: underline;
+nav #nav-menu a:hover {
+    color: #A1C9A5;
 }
 
-#nav-bar-line {
-    width: 90%;
+/* Navbar Line */
+hr#nav-bar-line {
+    margin: 0;
+    border: none;
     height: 1px;
-    background-color: #ccc;
-    margin: 20px auto 0;
+    background-color: #A1C9A5;
 }
-
