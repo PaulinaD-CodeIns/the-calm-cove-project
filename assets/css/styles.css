@@ -165,3 +165,36 @@ table td {
     background-color: #F4F1E1;
     color: #3E4E38;
 }
+
+/* Join a class form styling */
+/* Join a class form styling */
+#join-a-class form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+#join-a-class form label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+#join-a-class form input,
+#join-a-class form select,
+#join-a-class form button {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #3E4E38;
+    border-radius: 5px;
+}
+
+#join-a-class form button {
+    background-color: #3E4E38;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#join-a-class form button:hover {
+    background-color: #A1C9A5;
+}
