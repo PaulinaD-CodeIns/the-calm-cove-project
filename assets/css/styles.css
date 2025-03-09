@@ -65,3 +65,48 @@ hr#nav-bar-line {
     height: 1px;
     background-color: #A1C9A5;
 }
+
+/* Main Content */
+main {
+    padding: 2rem 3rem;
+}
+
+/* Welcome Section */
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+#welcome-text h3 {
+    font-size: 2.5rem;
+    color: #3E4E38;
+    margin-bottom: 1rem;
+}
+
+#welcome-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 80vw;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+#welcome-img {
+    width: 80vw;
+    max-width: 90vw;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+.welcome-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
