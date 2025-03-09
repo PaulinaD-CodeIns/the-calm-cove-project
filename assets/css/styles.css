@@ -228,3 +228,32 @@ table td {
 #contact-info p {
     margin-bottom: 0.5rem;
 }
+
+/* Footer styling */
+footer {
+    background-color: #3E4E38;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+footer #social-medias {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+footer #social-medias li {
+    font-size: 1.5rem;
+}
+
+footer #social-medias a {
+    color: white;
+    text-decoration: none;
+}
+
+footer #social-medias a:hover {
+    color: #A1C9A5;
+}
