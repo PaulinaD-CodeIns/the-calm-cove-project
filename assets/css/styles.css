@@ -116,3 +116,52 @@ main {
     width: 100%;
     border-radius: 10px;
 }
+
+/* Sign up section styling */
+.sign-up-section {
+    background-color: #A1C9A5;
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 3rem;
+}
+
+/* Motivational Line styling */
+
+.motivation-line-box {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+#motivation-line {
+    font-style: italic;
+    font-size: 1.4rem;
+    color: white;
+}
+
+/* Timetable styling */
+.timetable-box {
+    margin-top: 2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table th,
+table td {
+    padding: 1rem;
+    text-align: center;
+}
+
+table th {
+    background-color: #3E4E38;
+    color: white;
+}
+
+table td {
+    background-color: #F4F1E1;
+    color: #3E4E38;
+}
