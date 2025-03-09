@@ -198,3 +198,33 @@ table td {
 #join-a-class form button:hover {
     background-color: #A1C9A5;
 }
+
+/* Find us section styling */
+.find-us-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 3rem;
+    padding: 2rem;
+}
+
+#google-map {
+    width: 48%;
+    height: 450px;
+}
+
+#contact-info {
+    width: 48%;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+#contact-info h3 {
+    font-size: 2rem;
+    color: #3E4E38;
+    margin-bottom: 1rem;
+}
+
+#contact-info p {
+    margin-bottom: 0.5rem;
+}
