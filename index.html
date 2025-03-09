@@ -25,9 +25,11 @@
 <body>
     <!--Logo and Navigation Bar-->
     <header>
-        <img src="./assets/images/TheCalmCoveLogo.png" alt="Website Logo" id="logo">
+        <div class="img-box">
+            <img src="./assets/images/TheCalmCoveLogo.png" alt="Website Logo" id="logo">
+        </div>
 
-        <nav>
+        <nav class="nav-box">
             <ul id="nav-menu">
                 <li><a href="#what-we-offer">What We Offer</a></li>
                 <li><a href="#join-a-class">Join a Class</a></li>
@@ -65,8 +67,9 @@
         </section>
 
         <!--Classes offered section-->
-        <section id="what-we-offer">
-            <h3>What we offer</h3>
+        <section class="what-we-offer-box">
+            <div id="what-we-offer-text">
+                <h3>What we offer</h3>
             <p>To help you find your inner zen we currently offer 3 types of yoga that will support you on your journey
                 of personal development with energy healing, breathwork and holistic freeing movement. We offer:</p>
             <ul>
@@ -78,76 +81,80 @@
                 <li>Yoga Flow - A dynamic, breath-guided flow that’s always fresh and exciting. Our teachers keep it
                     creative and fun, offering something new each time!.</li>
             </ul>
-
-            <img src="./assets/images/meditationpose.png" alt="Meditation pose" id="meditation-img">
+            </div>
+            <div class="meditation-img-box"><img src="./assets/images/meditationpose.png" alt="Meditation pose" id="meditation-img"></div>
 
         </section>
 
         <!--Timetable of classes section-->
-
-        <p id="motivation-line">"Start your journey to wellness—transform your mind and body today!"</p>
-        <div>
-            <h3>Our Schedule:</h3>
-            <table id="timetable">
-                <thead>
-                    <tr>
-                        <th>Beginners Yoga</th>
-                        <th>Restorative Yoga</th>
-                        <th>Yoga Flow</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Tuesday @7:15pm</td>
-                        <td>Thursday @4:30pm</td>
-                        <td>Monday @6:30pm</td>
-                    </tr>
-                    <tr>
-                        <td>Saturday @10:30am</td>
-                        <td>Saturday @6:00pm</td>
-                        <td>Sunday @11:00am</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <!--Join a Class form section-->
-        <div id="join-a-class">
-
-            <form id="join-a-class-form" method="POST" action="https://formdump.codeinstitute.net">
-                <h2><i class="fa-solid fa-calendar-days"></i> Join a class!</h2>
-                <label for="first-name">First Name</label>
-                <input type="text" name="first_name" id="first-name" class="text-input" required>
-                <label for="last-name">Last Name</label>
-                <input type="text" name="last_name" id="last-name" class="text-input" required>
-                <label for="email-address">Email Address</label>
-                <input type="email" name="email_address" id="email-address" class="text-input" required>
-                <label for="class-select">Choose your class:</label>
-                <select id="class-select" name="class">
-                    <option value="" disabled selected>Select a class</option>
-                    <option value="beginners-tuesday">Beginners Yoga - Tue 7:15pm</option>
-                    <option value="beginners-saturday">Beginners Yoga - Sat 10:30am</option>
-                    <option value="restorative-thursday">Restorative Yoga - Thu 4:30pm</option>
-                    <option value="restorative-saturday">Restorative Yoga - Sat 6:00pm</option>
-                    <option value="flow-monday">Yoga Flow - Mon 6:30pm</option>
-                    <option value="flow-sunday">Yoga Flow - Sun 11:00am</option>
-                </select>
-
-                <br>
-
-                <button type="submit" class="join-class-button">Save your spot!</button>
-            </form>
-        </div>
+        <section class="sign-up-section"> 
+            <div class="motivation-line-box">
+                <p id="motivation-line">"Start your journey to wellness—transform your mind and body today!"</p>
+            </div>
+            <div class="timetable-box">
+                <h3>Our Schedule:</h3>
+                <table id="timetable">
+                    <thead>
+                        <tr>
+                            <th>Beginners Yoga</th>
+                            <th>Restorative Yoga</th>
+                            <th>Yoga Flow</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Tuesday @7:15pm</td>
+                            <td>Thursday @4:30pm</td>
+                            <td>Monday @6:30pm</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday @10:30am</td>
+                            <td>Saturday @6:00pm</td>
+                            <td>Sunday @11:00am</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    
+            <!--Join a Class form section-->
+            <div id="join-a-class">
+    
+                <form id="join-a-class-form" method="POST" action="https://formdump.codeinstitute.net">
+                    <h2><i class="fa-solid fa-calendar-days"></i> Join a class!</h2>
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="first_name" id="first-name" class="text-input" required>
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="last_name" id="last-name" class="text-input" required>
+                    <label for="email-address">Email Address</label>
+                    <input type="email" name="email_address" id="email-address" class="text-input" required>
+                    <label for="class-select">Choose your class:</label>
+                    <select id="class-select" name="class">
+                        <option value="" disabled selected>Select a class</option>
+                        <option value="beginners-tuesday">Beginners Yoga - Tue 7:15pm</option>
+                        <option value="beginners-saturday">Beginners Yoga - Sat 10:30am</option>
+                        <option value="restorative-thursday">Restorative Yoga - Thu 4:30pm</option>
+                        <option value="restorative-saturday">Restorative Yoga - Sat 6:00pm</option>
+                        <option value="flow-monday">Yoga Flow - Mon 6:30pm</option>
+                        <option value="flow-sunday">Yoga Flow - Sun 11:00am</option>
+                    </select>
+    
+                    <br>
+    
+                    <button type="submit" class="join-class-button">Save your spot!</button>
+                </form>
+            </div>
+        </section>
+       
 
         <!--Google Map and find us section-->
-        <section id="find-us">
-            <div>
+        <section class="find-us-box">
+            <div id="google-map">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9960.021099269034!2d-2.3807143128417794!3d51.3845811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4871819b366a5b99%3A0xb0bbf80d2eed79be!2sRobyn&#39;s%20Yoga%20Studio!5e0!3m2!1sen!2suk!4v1741348925026!5m2!1sen!2suk"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade" alt="Google maps view of address"></iframe>
-
             </div>
+
             <div id="contact-info">
                 <h3>Find Us</h3>
                 <p>For any additional questions regarding our services at The Calm Cove, how to join our community, or
@@ -162,7 +169,7 @@
     </main>
 
     <!--Footer-->
-    <footer>
+    <footer class="footer-box">
         <ul id="social-medias">
             <li>
                 <a href="https://www.facebook.com/" target="_blank" rel="noopener"
