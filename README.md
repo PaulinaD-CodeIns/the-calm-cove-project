@@ -64,14 +64,30 @@ The colors used in the design were chosen to mirror the neutral, earthy tones of
 
 **Design Elements and Layout:**
 
-The layout was designed to flow naturally and intuitively, with the content structured to guide the user effortlessly through the website. This reflects the organic nature of wellness — simple, yet intentional design that aligns with natural movements and rhythms. The flexible grid system ensures that elements are aligned symmetrically, while also adapting fluidly to various screen sizes. This responsiveness symbolizes balance — the design remains harmonious and user-friendly, no matter the device.
+The layout was designed to flow naturally and intuitively, with the content structured to guide the user effortlessly through the website. This reflects the organic nature of wellness — simple, yet intentional design that aligns with natural movements and rhythms. The flexible grid system ensures that elements are aligned symmetrically, while also adapting fluidly to various screen sizes.
 
 The rounded corners on images and buttons echo the soft, organic shapes of nature, avoiding harsh angles or rigid lines that might disrupt the calming vibe.
-The white space between sections allows for mental breathing room, creating a sense of spaciousness and tranquility, akin to the openness found in a peaceful natural setting.
+The white space between sections allows for mental breathing room, creating a sense of spaciousness and tranquility, akin to the openness found in a peaceful natural setting. This is how the deployed version of this website has turned out visually:
+
+ ![Deploy1](./assets/readme.md-images/Deploy1.png)
+ ![Deploy2](./assets/readme.md-images/Deploy2.png)
+ ![Deploy3](./assets/readme.md-images/Deploy3.png)
+ ![Deploy4](./assets/readme.md-images/Deploy4.png)
+ ![Deploy5](./assets/readme.md-images/Deploy5.png)
+
+There is room for improvements especially around the 'What We Offer' section. This section of the CSS code would need extra time with to make sure the flexbox method is used more effectively to better the placement of the elements. At the moment the different types of classes on offer are in a list that has inconsistent font size and placement in relation to other elements in it's section. 
 
 **Text and Typography:**
 
 The use of Arial for the font reflects a modern, simple, and clean design, ensuring that content is accessible without distraction. The font choice is unobtrusive, aligning with the idea of a space that promotes focus and reflection.
+
+**Logo:**
+
+The Calm Cove logo was created using Canva, utilizing a pre-generated template that matched the brand's tranquil and organic theme. The white color was chosen for its simplicity and to align with the clean, minimalist design of the website.
+
+The logo's subtle design ensures it doesn’t overwhelm users while maintaining brand recognition. This choice complements the white header, creating a cohesive, peaceful aesthetic that enhances the user experience without distraction.
+
+![Logo](./assets/images/TheCalmCoveLogo.png)
 
 **Images:**
 
@@ -79,8 +95,35 @@ Website's imagery plays a crucial role in reinforcing the natural, grounding atm
 
 - Welcome Image: The welcoming image is intentionally chosen to convey a positive, warm, and inviting atmosphere. The earthy tones in the image — with its soft, natural hues — enhance the calming effect and make visitors feel at ease. The figure of the woman with open arms symbolically invites visitors to embrace the site, creating a sense of welcome and belonging. This image is designed to make users feel as though they are being embraced into the community, reflecting the open-hearted nature of the wellness journey offered by the brand.
 
+![Welcome](./assets/images/welcome.png)
+
 - Meditation Pose Image: The meditation pose photo carries the same organic tones and peaceful vibe. It includes candles and incense burning in the lower left corner, which visually evokes a feeling of warmth, coziness, and serenity. This imagery contributes to the sense of tranquility and calmness that the brand aims to create, reinforcing the theme of wellness, mindfulness, and inner peace.
 
+![MeditationPose](./assets/images/meditationpose.png)
+
+---
+## Key Features:
+
+- Welcome Page: A welcoming homepage with the Calm Cove logo and an inviting photo that sets a peaceful, calming tone.
+![Welcome](./assets/readme.md-images/Welcome.png)
+
+- Navigation Bar: Easy-to-use interactive navigation bar with clear links to sections of the website for smooth user experience.
+![Navigation](./assets/readme.md-images/Navigation.png)
+
+- What We Offer Section: Displays a description of services with an accompanying photo to visually support the offerings.
+![What We Offer](./assets/readme.md-images/WhatWeOffer.png)
+
+- Timetable: A structured timetable showcasing class schedules for easy access and planning. Also features a motivational hero line and call to action, encouraging users to take the next step towards joining the community.
+![Timetable](./assets/readme.md-images/Timetable.png)
+
+- Sign-Up Form: An interactive form with a dropdown selector for users to choose the class they want to save spot for.
+![Form](./assets/readme.md-images/SignUpForm.png)
+
+- Find Us Section: Google Map integration to visually guide users to the physical location, with a contact section for inquiries.
+![Find Us](./assets/readme.md-images/GoogleMap.png)
+
+- Footer with Social Media Links: Footer includes social media links to stay connected with users and promote the brand’s online presence.
+![Footer](./assets/readme.md-images/SocialMedia.png)
 
 ---
 ## Technology Stack
@@ -105,6 +148,39 @@ Website's imagery plays a crucial role in reinforcing the natural, grounding atm
     - _Favicon Generator:_ Used to create a custom favicon for the website representing a meditation pose which relates to the theme of yoga practices and wellness. 
     - _Canva Online Tool_: Used by myself to create the websites logo using a pre-available template from the website that matches the general theme I was going for. 
     - _HTML Color Picker_: I originally used a pre-generated color pallete from Coolors, however, as the project was developed I decided to change the colors to my own picks. For this I have searched using this online tool to generate the hex codes used. 
+
+
+---
+## Testing
+
+- **Validation**:
+
+  - HTML has been validated with the W3C HTML5 Validator. There was 1 error message for HTML code to remove the "alt" tag from the iframe Google Maps link. Once this was removed, the HTML validator showed there was no errors left.
+  ![HTMLError](./assets/readme.md-images/HTMLError.png)
+  ![HTMLCorrect](./assets/readme.md-images/HTMLCorrect.png)
+
+  - CSS has been successfully validated with the W3C CSS Validator. Links checked with https://validator.w3.org/checklink (W3C Link Checker).
+  ![CSSCorrect](./assets/readme.md-images/CSSCorrect.png)
+
+
+- **Testing Platforms**:
+
+  - The project was mainly tested using the Chrome Browsers Dev Tools feature which displayed mostly everything as expected, across different devices to test responsiveness.
+  - Unfortunately, due to time constraints, I was not able to personally test the project across a wider range of devices. This is an area I would suggest for improvement in the future, as thorough cross-device testing would help ensure a more seamless experience for users on various platforms.
+  - I was, however, able to test this project’s functionality across different browsers such as Firefox, Safari and Edge using LambdaTest. (Source: https://app.lambdatest.com/console/realtime/browser/desktop.) This test confirmed the successful functionality of this project across all these browsers with no bugs or compromises in fast performance.
+
+-  **Issues Found:**
+
+The design is largely responsive and has been tested across a range of devices, including small phones, medium devices, tablets, and desktops. In most cases, the responsive design functions as expected. However, there are a couple of issues on specific phones. On devices like the Samsung Galaxy S8 Plus, the timetable section overflows beyond its container, and for devices such as the Samsung Z Fold 5, the margin on the right side appears misaligned and out of proportion. These issues are relatively minor in the grand scheme of the design but would require further refinement. Unfortunately, due to time constraints, I was unable to resolve this issue within the project timeline, but it remains a top-task for future development.
+![Tablet](./assets/readme.md-images/Tablet.png)
+![SG20ultra](./assets/readme.md-images/SG20ultra.png)
+![SG8plus](./assets/readme.md-images/SG8plus.png)
+
+- **Accessability**:
+
+Using Chrome DevTools' Lighthouse tool, the website achieved solid performance scores across multiple categories. The performance score of 96 indicates optimized load times and strong overall performance. The accessibility score of 96 ensures the site is easy to navigate for a broad range of users, providing an intuitive and inclusive experience. The website also received a perfect 100 in both SEO and Best Practices, demonstrating excellent search engine optimization and adherence to modern web standards, prioritizing security and reliability. These scores were consistent across both mobile and desktop versions. Overall, the project scored highly across key metrics, indicating a well-rounded, functional, and optimized website.
+
+![LighthouseAccessability](./assets/readme.md-images/LighthouseAccessability.png)
 
 ---
 
